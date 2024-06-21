@@ -1,0 +1,12 @@
+{
+  "name": " Printer",
+  "description": "Disable header and footer, and hide link for printing ",
+  "version": "0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://developer.salesforce.com/tools/vscode/*", "http://localhost:8888/tools/vscode/*"],
+      "js": ["content_script.js"]
+    }
+  ]
+}
